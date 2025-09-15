@@ -1,6 +1,4 @@
-In this assignment let's build an **Nxt Watch** by applying the concepts we have learned till now.
-website link [https://thirunxtwatch.ccbp.tech/]
-use username :rahul password: rahul@2021
+In this assignment let's build an **Nxt Watch** by applying the concepts we have learned till now. website link [https://thirunxtwatch.ccbp.tech/] use username :rahul password: rahul@2021
 
 ### Refer to videos below:
 
@@ -178,7 +176,6 @@ The app must have the following functionalities
 - Initially, the app should be in **light** theme
 
 - **Login Route**
-
   - When a invalid username and password are provided and the Login button is clicked, then the respective error message received from the response should be displayed
   - When a valid username and password are provided and the Login button is clicked, then the page should be navigated to the **Home** route
   - When an _unauthenticated_ user, tries to access the `HomeRoute`, `TrendingRoute`, `GamingRoute`, `SavedVideosRoute`, `VideoDetailsRoute`, then the page should be navigated to **Login** route
@@ -188,7 +185,6 @@ The app must have the following functionalities
   - When show password checkbox is unchecked, then the password should be masked
 
 - **Home Route**
-
   - When an authenticated user opens the **Home** Route,
     - An HTTP GET request should be made to **homeVideosApiUrl** with query parameter as `search` and its initial value as empty string
       - **_Loader_** should be displayed while the HTTP request is fetching the data
@@ -207,7 +203,6 @@ The app must have the following functionalities
   - Clicks on the **Saved Videos** link in the Sidebar is clicked, then the page should be navigated to the **SavedVideos** route
 
 - **Trending Route**
-
   - When an authenticated user opens the **Trending** Route,
     - An HTTP GET request should be made to **trendingVideosApiUrl**
       - **_Loader_** should be displayed while the HTTP request is fetching the data
@@ -221,7 +216,6 @@ The app must have the following functionalities
   - Clicks on the **Saved Videos** link in the Sidebar is clicked, then the page should be navigated to the **SavedVideos** route
 
 - **Gaming Route**
-
   - When an authenticated user opens the **Gaming** Route,
     - An HTTP GET request should be made to **gamingVideosApiUrl**
       - **_Loader_** should be displayed while the HTTP request is fetching the data
@@ -235,7 +229,6 @@ The app must have the following functionalities
   - Clicks on the **Saved Videos** link in the Sidebar is clicked, then the page should be navigated to the **SavedVideos** route
 
 - **Video Item Details Route**
-
   - When an authenticated user opens the **Video Item Details** route
     - An HTTP GET request should be made to **videoItemDetailsApiUrl** with `jwt_token` in the Cookies and `video_id` as path parameter
       - **_loader_** should be displayed while the HTTP request is fetching the data
@@ -248,7 +241,6 @@ The app must have the following functionalities
     - It will change to an active state
     - If the **Dislike** button is already in the active state, then the **Dislike** button needs to be changed to the inactive state
   - When the **Dislike** button is clicked,
-
     - It will change to an active state
     - If the **Like** button is already in the active state, then the **Like** button needs to be changed to the inactive state
 
@@ -260,7 +252,6 @@ The app must have the following functionalities
     - **Saved** button text will be changed to **Save**
 
 - **SavedVideos Route**
-
   - When an authenticated user opens the **SavedVideos** Route,
     - If the list of saved videos is empty, then [No Saved Videos Found View](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-no-saved-videos-light-theme-lg-output.png) should be displayed
     - The **Videos** in the list of saved videos should be displayed as a list of videos
@@ -271,7 +262,6 @@ The app must have the following functionalities
   - Clicks on the **Gaming** link in the Sidebar is clicked, then the page should be navigated to the **Gaming** route
 
 - **Not Found Route**
-
   - When a random path is provided in the URL then the page should navigate to the **Not Found** route
 
 - When the **theme** button in the header is clicked, then the theme should be changed accordingly
@@ -518,7 +508,6 @@ console.log(formatDistanceToNow(new Date(2021, 8, 20)))
 - The channel logo images in Home Route should have the alt attribute value as **channel logo**.
 
 - **Home Route**
-
   - The Route should consist of an HTML container element with `data-testid` as `home`.
   - The Route should consist of an HTML image element with attribute value as `nxt watch logo` and src as the value of the given nxt watch logo URL should be displayed in the banner.
   - The Route should consist of a banner and it contains a close button element with `data-testid` as `close`.
@@ -527,28 +516,24 @@ console.log(formatDistanceToNow(new Date(2021, 8, 20)))
     - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background-color.
 
 - **Trending Route**
-
   - The Route should consist of an HTML container element with `data-testid` as `trending`.
   - The HTML container element with `data-testid` as `trending` should maintain the background color theme.
     - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background-color.
     - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background-color.
 
 - **Gaming Route**
-
   - The Route should consist of an HTML container element with `data-testid` as `gaming`.
   - The HTML container element with `data-testid` as `gaming` should maintain the background color theme.
     - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background-color.
     - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background-color.
 
 - **SavedVideos Route**
-
   - The **SavedVideos** Route should consist of an HTML container element with `data-testid` as `savedVideos`.
   - The HTML container element with `data-testid` as `savedVideos` should maintain the background color theme.
     - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background-color.
     - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background-color.
 
 - **VideoItemDetails Route**
-
   - The **VideoItemDetails** Route should consist of an HTML container element with `data-testid` as `videoItemDetails`.
   - The HTML container element with `data-testid` as `videoItemDetails` should maintain the background color theme.
     - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background-color.
